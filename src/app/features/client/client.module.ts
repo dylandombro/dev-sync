@@ -1,12 +1,21 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { ProjectOverviewComponent } from './components/project-overview/project-overview.component';
+import { TaskSubmissionComponent } from './components/task-submission/task-submission.component';
+import { DeveloperCommunicationComponent } from './components/developer-communication/developer-communication.component';
 
-
+const routes: Routes = [
+  { path: '', component: ProjectOverviewComponent },
+  { path: 'submit-task', component: TaskSubmissionComponent },
+  { path: 'communication', component: DeveloperCommunicationComponent },
+];
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
-  ]
+    RouterModule.forChild(routes),
+    ProjectOverviewComponent,
+    TaskSubmissionComponent,
+    DeveloperCommunicationComponent,
+  ],
 })
-export class ClientModule { }
+export class ClientModule {}

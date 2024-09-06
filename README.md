@@ -1,27 +1,54 @@
 # DevSync
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+DevSync is an email enhancement application built for developers (freelancers) to communicate and track progress, change requests, and other communications from clients to developers.
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project follows a modular structure with separate modules for developers, clients, and common features. It uses standalone components and a core service for task management.
 
-## Code scaffolding
+## TODO List
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [x] Set up initial project structure
+- [x] Create basic routing
+- [x] Set up feature modules (Developer, Client, Common)
+- [x] Create TaskService
+- [ ] Implement authentication service
+- [ ] Create login and registration components
+- [ ] Implement KanbanBoard component for developers
+- [ ] Implement ProjectOverview component for clients
+- [ ] Set up real-time communication (WebSocket)
+- [ ] Integrate with backend API
+- [ ] Implement email parsing service
+- [ ] Add unit tests for components and services
+- [ ] Set up end-to-end testing
+- [ ] Implement proper error handling and logging
+- [ ] Add user documentation
+- [ ] Set up CI/CD pipeline
 
-## Build
+## Development Context
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project is currently in its initial stages. We have set up the basic structure, routing, and a task service. The next steps involve implementing the core functionalities such as authentication, the main components for developers and clients, and integration with the backend.
 
-## Running unit tests
+Key points:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. The project uses standalone components, which are imported in the feature modules rather than declared.
+2. We have a TaskService in the core module that handles basic CRUD operations for tasks.
+3. The routing is set up to lazy load feature modules for better performance.
+4. We need to implement proper authentication and authorization next.
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run the project locally:
 
-## Further help
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `ng serve` to start the development server
+4. Navigate to `http://localhost:4200/` in your browser
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contributing
+
+[Add contributing guidelines here]
+
+## License
+
+[Add license information here]

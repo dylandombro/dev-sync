@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-kanban-board',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './kanban-board.component.html',
-  styleUrl: './kanban-board.component.css'
+  styleUrls: ['./kanban-board.component.css'],
 })
 export class KanbanBoardComponent {
-
+  // Component logic here
 }
